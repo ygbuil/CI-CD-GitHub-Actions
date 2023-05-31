@@ -30,4 +30,5 @@ jobs:
       - name: Merge dev into master
         if: ${{ success() }}
         run: |
+          git fetch --unshallow
           git branch
