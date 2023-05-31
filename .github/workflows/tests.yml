@@ -26,3 +26,7 @@ jobs:
       - name: Run pytest
         run: |
           pytest
+
+      - name: Stop workflow if tests fail
+        if: failure()
+        run: exit 1
