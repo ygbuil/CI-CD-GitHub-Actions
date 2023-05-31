@@ -27,6 +27,9 @@ jobs:
         run: |
           pytest
 
-      - name: Stop workflow if tests fail
-        if: failure()
-        run: exit 1
+      - name: Merge dev into master
+        if: ${{ success() }}
+        run: |
+          git checkout master
+          git merge -Xtheirs dev
+          git push -u origin master
