@@ -30,6 +30,8 @@ jobs:
       - name: Merge dev into master
         if: ${{ success() }}
         run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
           git checkout master
           git merge -Xtheirs dev
           git push -u origin master
