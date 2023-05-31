@@ -31,4 +31,6 @@ jobs:
         if: ${{ success() }}
         run: |
           git fetch --unshallow
-          git branch
+          git checkout master
+          git merge -Xtheirs dev
+          git push -u origin master
