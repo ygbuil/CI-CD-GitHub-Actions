@@ -24,7 +24,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run pytest
+      - name: Run pytest on dev
         run: |
           pytest
 
@@ -42,3 +42,7 @@ jobs:
           git checkout pre_master
           git merge dev
           git push -u origin pre_master
+
+      - name: Run pytest on pre_master
+        run: |
+          pytest
