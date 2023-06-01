@@ -31,7 +31,7 @@ jobs:
       - name: Identify with token
         uses: actions/checkout@v3
         with:
-          token: ${{ github.token }}
+          token: ${{ secrets.TOKEN }}
           fetch-depth: "0"
 
       - name: Merge dev into master
