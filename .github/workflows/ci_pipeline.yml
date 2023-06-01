@@ -12,7 +12,8 @@ jobs:
       - name: Clone code to VM
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # only take last commit (to reduce time)
+          # only take last commit (to reduce time)
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v3
@@ -34,7 +35,8 @@ jobs:
           token: ${{ secrets.TOKEN }}
           fetch-depth: "0"
 
-      - name: Merge dev into master
+      - name: Merge dev into pre_master
+        # if tests are passed, dev is merged into pre_master
         if: ${{ success() }}
         run: |
           git config --global user.email "actions@github.com"
