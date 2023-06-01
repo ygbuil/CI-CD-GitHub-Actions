@@ -1,0 +1,1 @@
+[![Pipeline](https://github.com/ygbuil/GitHub-Actions/actions/workflows/pipeline.yml/badge.svg)](https://github.com/ygbuil/GitHub-Actions/actions/workflows/pipeline.yml)
