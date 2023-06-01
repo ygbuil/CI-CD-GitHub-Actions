@@ -45,4 +45,5 @@ jobs:
 
       - name: Run pytest on pre_master
         run: |
+          git branch
           pytest
