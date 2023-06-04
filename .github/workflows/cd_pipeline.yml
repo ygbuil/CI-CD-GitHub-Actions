@@ -20,9 +20,6 @@ jobs:
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "Github Actions"
-      #    git checkout master
-      #    git merge pre_master
-      #    git push -u origin master
           git fetch
           git checkout pre_master
           git pull origin pre_master
@@ -39,12 +36,5 @@ jobs:
           git merge pre_master
           git push origin master
 
-      #- name: Pull code
-      #  if: ${{ success() }}
-      #  run: |
-      #    cd C:\Users\llorenc.buil\github\CI-CD-GitHub-Actions
-      #    git checkout master
-      #    git clean -fd -x
-      #    git pull
           
 
