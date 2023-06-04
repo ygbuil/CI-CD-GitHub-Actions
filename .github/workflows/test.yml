@@ -11,5 +11,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Identify with token
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.TOKEN }}
+          fetch-depth: "0"
+
       - name: Print greeting
-        run: echo 'hey'
+        run: |
+          cd C:\Users\llorenc.buil\Documents\GitHub-Actions\GitHub-Actions
+          git pull
