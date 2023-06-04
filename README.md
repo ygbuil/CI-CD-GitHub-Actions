@@ -23,7 +23,6 @@ Each developer works on his `dev` branch, and whenever a code feature is finishe
 
 * Merge `pre_master` into `master`.
 * Run tests on the production server.
-* If tests pass, the `master` code is pulled to the server.
 
 # How to use it
 
