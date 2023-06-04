@@ -27,10 +27,10 @@ jobs:
 
       - name: Run pytest on server
         run: |
-          cd C:\Users\llorenc.buil\github\GitHub-Actions
+          cd C:\Users\llorenc.buil\github\CI-CD-GitHub-Actions
           python -m pytest
 
       - name: Pull code
         run: |
-          cd C:\Users\llorenc.buil\github\GitHub-Actions
+          cd C:\Users\llorenc.buil\github\CI-CD-GitHub-Actions
           git pull

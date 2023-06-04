@@ -1,3 +1,3 @@
-[![CI Pipeline](https://github.com/ygbuil/GitHub-Actions/actions/workflows/ci_pipeline.yml/badge.svg)](https://github.com/ygbuil/GitHub-Actions/actions/workflows/ci_pipeline.yml)
+[![CI Pipeline](https://github.com/ygbuil/CI-CD-GitHub-Actions/actions/workflows/ci_pipeline.yml/badge.svg?branch=dev)](https://github.com/ygbuil/CI-CD-GitHub-Actions/actions/workflows/ci_pipeline.yml)
 
-[![CD Pipeline](https://github.com/ygbuil/GitHub-Actions/actions/workflows/cd_pipeline.yml/badge.svg)](https://github.com/ygbuil/GitHub-Actions/actions/workflows/cd_pipeline.yml)
+[![CD Pipeline](https://github.com/ygbuil/CI-CD-GitHub-Actions/actions/workflows/cd_pipeline.yml/badge.svg?branch=pre_master)](https://github.com/ygbuil/CI-CD-GitHub-Actions/actions/workflows/cd_pipeline.yml)
