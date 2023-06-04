@@ -28,7 +28,7 @@ jobs:
       - name: Run pytest on server
         run: |
           cd C:\Users\llorenc.buil\Documents\GitHub-Actions\GitHub-Actions
-          pytest
+          python -m pytest
 
       - name: Pull code
         run: |
