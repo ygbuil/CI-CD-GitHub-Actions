@@ -1,5 +1,6 @@
 name: CI Pipeline
 
+# define that the pipeline is triggered when something is pushed to dev branch
 on:
   push:
     branches:
@@ -7,8 +8,10 @@ on:
 
 jobs:
   test:
+    # create windows VM
     runs-on: windows-latest
     steps:
+
       - name: Clone code to VM
         uses: actions/checkout@v3
         with:
@@ -25,11 +28,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run pytest on dev
+      - name: Run pytest on dev branch
         run: |
           pytest
 
-      - name: Identify with token
+      - name: Authenticate with token
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.TOKEN }}

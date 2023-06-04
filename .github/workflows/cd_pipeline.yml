@@ -1,17 +1,16 @@
 name: CD Pipeline
 
+# define that the pipeline is manually triggered
 on:
   workflow_dispatch:
 
 jobs:
-  build:
+  deploy:
+    # run on production server
     runs-on: self-hosted
-
     steps:
-      #- name: Checkout code
-      #  uses: actions/checkout@v3
 
-      - name: Identify with token
+      - name: Authenticate with token
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.TOKEN }}
