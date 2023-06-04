@@ -10,6 +10,12 @@ jobs:
     runs-on: self-hosted
     steps:
 
+      - name: Clone code
+        uses: actions/checkout@v3
+        with:
+          # only take last commit (to reduce time)
+          fetch-depth: 0
+
       - name: Authenticate with token
         uses: actions/checkout@v3
         with:
