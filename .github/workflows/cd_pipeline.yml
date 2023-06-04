@@ -29,9 +29,9 @@ jobs:
           cd C:\Users\llorenc.buil\github\CI-CD-GitHub-Actions
           python -m pytest
 
-      - name: Pull code
-        if: ${{ success() }}
-        run: |
-          cd C:\Users\llorenc.buil\github\CI-CD-GitHub-Actions
-          git clean -fd -x
-          git pull
+      #- name: Pull code
+      #  if: ${{ success() }}
+      #  run: |
+      #    cd C:\Users\llorenc.buil\github\CI-CD-GitHub-Actions
+      #    git clean -fd -x
+      #    git pull
