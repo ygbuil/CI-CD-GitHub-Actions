@@ -32,5 +32,5 @@ jobs:
 
       - name: Pull code
         run: |
-          cd C:\Users\llorenc.buil\Documents\GitHub-Actions
+          cd C:\Users\llorenc.buil\github\GitHub-Actions
           git pull
