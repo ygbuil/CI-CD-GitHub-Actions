@@ -25,7 +25,12 @@ jobs:
           git merge pre_master
           git push -u origin master
 
-      - name: Print greeting
+      - name: Run pytest on server
+        run: |
+          cd C:\Users\llorenc.buil\Documents\GitHub-Actions\GitHub-Actions
+          pytest
+
+      - name: Pull code
         run: |
           cd C:\Users\llorenc.buil\Documents\GitHub-Actions\GitHub-Actions
           git pull
