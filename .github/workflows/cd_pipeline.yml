@@ -5,14 +5,11 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
-      - name: Print greeting
-        run: echo 'hey'
 
       - name: Identify with token
         uses: actions/checkout@v3
@@ -27,3 +24,8 @@ jobs:
           git checkout master
           git merge pre_master
           git push -u origin master
+
+      - name: Print greeting
+        run: |
+          cd C:\Users\llorenc.buil\Documents\GitHub-Actions\GitHub-Actions
+          git pull
