@@ -1,6 +1,6 @@
 # CI-CD Github Actions
 
-# Description
+## Description
 
 This project is an implementation of a CI-CD pipeline, that simulates a real workflow of a production system. The project consists of a dummy main function and a dummy test (those are irrelevant for the purpose of the project), and the CI-CD Pipelines found in `.github/workflows`.
 
@@ -24,7 +24,7 @@ Each developer works on his `dev` branch, and whenever a code feature is finishe
 * Merge `pre_master` into `master`.
 * Run tests on the production server.
 
-# How to use it
+## How to use it
 
 * Clone the repository.
 * Go to `Settings` -> `Secrets and variables` -> `Actions` and create a secret token named `TOKEN`.
@@ -32,7 +32,7 @@ Each developer works on his `dev` branch, and whenever a code feature is finishe
 
 On the actions tab of the repository you can see status of the pipelines. To trigger the CI Pipeline, just push something to the `dev` branch. To trigger the CD Pipeline go to `Actions` -> `CD Pipeline` -> `Run workflow` -> Select `Use workflow from: branch pre_master` -> `Run workflow`.
 
-# Pipelines status
+## Pipelines status
 
 [![CI Pipeline](https://github.com/ygbuil/CI-CD-GitHub-Actions/actions/workflows/ci_pipeline.yml/badge.svg?branch=dev)](https://github.com/ygbuil/CI-CD-GitHub-Actions/actions/workflows/ci_pipeline.yml)
 
